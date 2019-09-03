@@ -24,6 +24,7 @@ describe(`Counter`, () => {
 		const wrapper = shallow(<Counter />);
 		const incBtn = wrapper.find(`.t-btn-inc`);
 		const decBtn = wrapper.find(`.t-btn-dec`);
+		// const counter = wrapper.find(`.t-count`); // this doesn't not works
 
 		it(`increment correct value`, () => {
 			expect(wrapper.find(`.t-count`).text()).toEqual(`0`);
@@ -31,7 +32,7 @@ describe(`Counter`, () => {
 			expect(wrapper.find(`.t-count`).text()).toEqual(`1`);
 		});
 
-		it(`descrement correctly`, () => {
+		it(`decrement correctly`, () => {
 			expect(wrapper.find(`.t-count`).text()).toEqual(`1`);
 			decBtn.simulate(`click`);
 			expect(wrapper.find(`.t-count`).text()).toEqual(`0`);
