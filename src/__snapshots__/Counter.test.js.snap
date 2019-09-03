@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter Component render correctly renders correctly 1`] = `
+Array [
+  <div
+    className="t-count"
+  >
+    0
+  </div>,
+  <button
+    className="t-btn-inc"
+    onClick={[Function]}
+  >
+    Increment
+  </button>,
+  <button
+    className="t-btn-dec"
+    onClick={[Function]}
+  >
+    Decrement
+  </button>,
+]
+`;
